@@ -1,0 +1,14 @@
+requests
+tqdm
+beautifulsoup4
+torch
+torchvision
+torchaudio
+transformers
+peft
+datasets
+scipy
+pillow
+numpy
+pandas
+requests
