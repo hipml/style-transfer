@@ -13,6 +13,8 @@ Project information and ideas. Texture transfer, but from talented artists!
   <img src="docs/images/b1.png" width="45%" />
 </p>
 
+*NST applied to a photograph of Maui's Waiʻānapanapa State Park, with style transfer from Van Gogh's* Starry Night
+
 
 ## Instructions
 To build and run the project, first initialize your environment using your preferrred Python package manager:
@@ -36,7 +38,9 @@ Note: CUDA version 12.4 is required for this environment. If using PIP, make sur
 
 
 ### Neural Style Transfer
-```python src/nst.py```
+```bash
+python src/nst.py
+```
 
 Usage:
 * `--input='<input_path.jpg>'` image to be altered
@@ -46,11 +50,20 @@ Usage:
 
 
 ### CycleGAN
-**To train:  **
-```python src/cyclegan.py --train --style_dir "images/art/vangogh/" --epochs 100 --batch_size 1 --lr 0.0002```    
+**To train:**  
+```
+python src/cyclegan.py --train /
+                       --style_dir "images/art/vangogh/" /
+                       --epochs 100 /
+                       --batch_size 1 /
+                       --lr 0.0002
+```    
 
-**Inference:  **
-```python src/cyclegan.py --input_image "images/input/dummy_class/input.jpg" --output_image "images/output/styled_vangogh.jpg"```
+**Inference:**  
+```bash
+python src/cyclegan.py --input_image "images/input/dummy_class/input.jpg" /
+                       --output_image "images/output/styled_vangogh.jpg"
+```
 
 
 ## Sources
