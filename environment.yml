@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 name: finalproj
 channels:
   - nvidia
+=======
+name: base
+channels:
+>>>>>>> dev
   - defaults
   - conda-forge
   - pytorch
@@ -8,6 +13,7 @@ channels:
   - https://repo.anaconda.com/pkgs/main
   - https://repo.anaconda.com/pkgs/r
 dependencies:
+<<<<<<< HEAD
   - _libgcc_mutex=0.1=conda_forge
   - _openmp_mutex=4.5=2_gnu
   - asttokens=2.4.1=pyhd8ed1ab_0
@@ -161,3 +167,15 @@ dependencies:
       - stringzilla==3.11.0
       - typing-extensions==4.12.2
 prefix: /home/lita/.conda/envs/finalproj
+=======
+  - python=3.12
+  - conda==24.9.2
+  - setuptools
+  - pip
+  - wheel
+  - conda-content-trust
+  - conda-libmamba-solver
+  - menuinst
+  - anaconda-anon-usage
+prefix: /opt/miniconda3
+>>>>>>> dev

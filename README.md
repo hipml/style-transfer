@@ -17,6 +17,11 @@ Project information and ideas. Texture transfer, but from talented artists!
 
 
 ## Instructions
+<<<<<<< HEAD
+=======
+This project requires Python 3.10.
+
+>>>>>>> dev
 To build and run the project, first initialize your environment using your preferrred Python package manager:
 
 #### Conda:
@@ -40,6 +45,7 @@ Note: CUDA version 12.4 is required for this environment. If using PIP, make sur
 ### Neural Style Transfer
 ```bash
 python src/nst.py
+<<<<<<< HEAD
 ```
 
 Usage:
@@ -57,12 +63,47 @@ python src/cyclegan.py --train /
                        --epochs 100 /
                        --batch_size 1 /
                        --lr 0.0002
+=======
+    --input '<input_path.jpg>' # image to be altered
+    --style '<style_path.jpg>' # style source image (default: 'images/art/starry_night.jpg')
+    --gamma # novel color preservation weight on loss function (optional, default `1e5`)
+    --color_control` # color content preservation (optional, default `0.7`)
+```
+
+NST uses a pretrained VGG19 model and performs optimization during inference time on each input-style image pair. This can lead to longer generation times without CUDA. 
+
+### CycleGAN
+
+CycleGAN needs a model to run inference. Trained models are ~300mb and can be provided upon request.
+
+**To train:**  
+```
+python src/cyclegan.py train 
+    --style_dir "images/art/vangogh/" 
+    --epochs 100 
+    --batch_size 1 
+    --lr 0.0002
+>>>>>>> dev
 ```    
 
 **Inference:**  
 ```bash
+<<<<<<< HEAD
 python src/cyclegan.py --input_image "images/input/dummy_class/input.jpg" /
                        --output_image "images/output/styled_vangogh.jpg"
+=======
+python script.py generate 
+    --input '<input_image.jpg>'
+    --output '<output_image.jpg>'
+    --checkpoint '<path/to/checkpoint.pth>'
+    --direction # AtoB or BtoA
+
+python script.py generate 
+    --input '<input_directory>'
+    --output '<output_directory>'
+    --checkpoint '<path/to/checkpoint.pth>'
+    --direction # AtoB or BtoA 
+>>>>>>> dev
 ```
 
 
@@ -76,3 +117,8 @@ python src/cyclegan.py --input_image "images/input/dummy_class/input.jpg" /
 * https://drive.google.com/drive/folders/1CglMyDFXJFNpDt3ebstOPYVwnVvMNv6g
 * https://www.reddit.com/r/DataHoarder/comments/d0wuae/50k_images_from_the_art_institute_of_chicago/
 * https://www.reddit.com/r/TheFrame/comments/10cu8hg/over_400_4k_opensource_artworks_from_around_the/
+
+
+## License
+
+This project is licensed under the [University of Illinois/NCSA Open Source License](license.txt). See [license.txt](license.txt) for details.

@@ -18,3 +18,10 @@ tramp
 .\#*
 
 .directory
+<<<<<<< HEAD
+=======
+/.myenv
+/.myvenv
+/output
+/resources
+>>>>>>> dev
