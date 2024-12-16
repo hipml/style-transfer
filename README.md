@@ -17,11 +17,7 @@ Project information and ideas. Texture transfer, but from talented artists!
 
 
 ## Instructions
-<<<<<<< HEAD
-=======
-This project requires Python 3.10.
 
->>>>>>> dev
 To build and run the project, first initialize your environment using your preferrred Python package manager:
 
 #### Conda:
@@ -39,13 +35,14 @@ source .myvenv/bin/activate
 pip install -r requirements.txt
 ```
 
+This project requires Python 3.10+.
+
 Note: CUDA version 12.4 is required for this environment. If using PIP, make sure the GPU-accelerated versions of PyTorch are installed.
 
 
 ### Neural Style Transfer
 ```bash
 python src/nst.py
-<<<<<<< HEAD
 ```
 
 Usage:
@@ -83,12 +80,10 @@ python src/cyclegan.py train
     --epochs 100 
     --batch_size 1 
     --lr 0.0002
->>>>>>> dev
 ```    
 
 **Inference:**  
 ```bash
-<<<<<<< HEAD
 python src/cyclegan.py --input_image "images/input/dummy_class/input.jpg" /
                        --output_image "images/output/styled_vangogh.jpg"
 =======
@@ -103,7 +98,6 @@ python script.py generate
     --output '<output_directory>'
     --checkpoint '<path/to/checkpoint.pth>'
     --direction # AtoB or BtoA 
->>>>>>> dev
 ```
 
 

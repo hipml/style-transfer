@@ -16,10 +16,7 @@ gmpy2
 idna 
 importlib_metadata 
 ipykernel 
-<<<<<<< HEAD
-=======
 ipympl
->>>>>>> dev
 ipython 
 jedi 
 Jinja2 
@@ -27,10 +24,7 @@ jupyter_client
 jupyter_core 
 MarkupSafe 
 matplotlib-inline 
-<<<<<<< HEAD
-=======
 matplotlib
->>>>>>> dev
 mkl-service
 mkl_fft 
 mkl_random 
@@ -54,10 +48,7 @@ pydantic==2.10.3
 pydantic_core==2.27.1
 Pygments 
 PySocks 
-<<<<<<< HEAD
-=======
 pyside6
->>>>>>> dev
 python-dateutil 
 PyYAML 
 pyzmq 
@@ -74,11 +65,6 @@ torchvision==0.20.1
 tornado 
 tqdm 
 traitlets 
-<<<<<<< HEAD
-triton==3.1.0
-=======
-# triton==3.1.0
->>>>>>> dev
 typing_extensions==4.12.2
 urllib3 
 wcwidth 
