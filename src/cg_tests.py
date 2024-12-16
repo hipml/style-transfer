@@ -83,7 +83,6 @@ def test_dataset():
     import tempfile
     import shutil
     
-    # create temp dirs
     temp_dir = tempfile.mkdtemp()
     os.makedirs(os.path.join(temp_dir, 'A'))
     os.makedirs(os.path.join(temp_dir, 'B'))
@@ -146,7 +145,6 @@ def test_real_dataset():
         print(f"Found {len(dataset.files_A)} images in source domain")
         print(f"Found {len(dataset.files_B)} images in style domain")
         
-        # Visualize some samples
         visualize_dataset_samples(dataset)
         
     except Exception as e:

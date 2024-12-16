@@ -4,8 +4,7 @@ import torch.nn as nn
 class SimpleStrokeBlock(nn.Module):
     def __init__(self, channels):
         super().__init__()
-
-
+        
         # simplified stroke detection - just two directions instead of four
         self.vertical = nn.Conv2d(channels, channels // 2, kernel_size=(5, 1), padding=(2, 0))
         self.horizontal = nn.Conv2d(channels, channels // 2, kernel_size=(1, 5), padding=(0, 2))
