@@ -1,5 +1,5 @@
-# Project Name
-**CS445 Fall 2024 Final Project** University of Illinois  
+# CS445 Computational Photography Final Project
+University of Illinois  
 
 <ins>Group members:</ins>  
 * Matt Poteshman (**mrp12**)  
@@ -17,6 +17,7 @@ Project information and ideas. Texture transfer, but from talented artists!
 
 
 ## Instructions
+This project requires Python 3.10+.
 
 To build and run the project, first initialize your environment using your preferrred Python package manager:
 
@@ -35,32 +36,12 @@ source .myvenv/bin/activate
 pip install -r requirements.txt
 ```
 
-This project requires Python 3.10+.
-
 Note: CUDA version 12.4 is required for this environment. If using PIP, make sure the GPU-accelerated versions of PyTorch are installed.
 
 
 ### Neural Style Transfer
 ```bash
 python src/nst.py
-```
-
-Usage:
-* `--input='<input_path.jpg>'` image to be altered
-* `--style='<style_path.jpg>'` style source image (default: 'images/art/starry_night.jpg')
-* `--gamma` color preservation weight on loss function (optional, default `1e5`)
-* `--color_control` color content preservation (optional, default `0.7`)
-
-
-### CycleGAN
-**To train:**  
-```
-python src/cyclegan.py --train /
-                       --style_dir "images/art/vangogh/" /
-                       --epochs 100 /
-                       --batch_size 1 /
-                       --lr 0.0002
-=======
     --input '<input_path.jpg>' # image to be altered
     --style '<style_path.jpg>' # style source image (default: 'images/art/starry_night.jpg')
     --gamma # novel color preservation weight on loss function (optional, default `1e5`)
@@ -84,16 +65,13 @@ python src/cyclegan.py train
 
 **Inference:**  
 ```bash
-python src/cyclegan.py --input_image "images/input/dummy_class/input.jpg" /
-                       --output_image "images/output/styled_vangogh.jpg"
-=======
-python script.py generate 
+python src/cyclegan.py generate 
     --input '<input_image.jpg>'
     --output '<output_image.jpg>'
     --checkpoint '<path/to/checkpoint.pth>'
     --direction # AtoB or BtoA
 
-python script.py generate 
+python src/cyclegan.py generate 
     --input '<input_directory>'
     --output '<output_directory>'
     --checkpoint '<path/to/checkpoint.pth>'
