@@ -13,7 +13,7 @@ Project information and ideas. Texture transfer, but from talented artists!
   <img src="docs/images/b1.png" width="45%" />
 </p>
 
-*NST applied to a photograph of Maui's Waiʻānapanapa State Park, with style transfer from Van Gogh's* Starry Night
+*Neural Style Transfer (NST) applied to a photograph of Maui's Waiʻānapanapa State Park, with style transfer from Van Gogh's* Starry Night
 
 
 ## Instructions
